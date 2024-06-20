@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Color Fill Animation</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      background: linear-gradient(to right, red 50%, yellow 50%);
+      background-size: 200% 100%;
+      animation: fillColor 2s ease-in-out forwards;
+    }
+
+    @keyframes fillColor {
+      0% {
+        background-position: 0% 50%;
+      }
+      100% {
+        background-position: 100% 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
